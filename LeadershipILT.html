@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Leadership Skills</title>
+    <!-- Main Stylesheet CSS File -->
+    <link rel="stylesheet" href="css/ILT_samples.css">
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Aswome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Goofle Fonts(Oswald) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .sample-details .info {
+            display: flex;
+            justify-content: space-evenly;
+            grid-gap: 0;
+        }
+
+        @media (max-width: 767px) {
+            .sample-details .info {
+                flex-direction: column;
+                gap: 30px;
+                margin-left: 10%;
+            }
+            .sample-details {
+                padding-bottom: 40px;
+            }
+        }
+
+        .sample-details .info .col {
+            margin: 0;
+            width: 250px;
+        }
+        .sample-pdf {
+            padding-bottom: 80px;
+        }
+    </style>
+    <script type="text/javascript" src="JS/myScript.js"></script>
+</head>
+<body>
+<!-- Start Header -->
+    <header>
+        <div class="container">
+            <p class="logo">Shaaban <span>Ahmed</span></p>
+            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars toggle-menu"></i></a>
+                <ul id="myLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- End Header -->
+<!-- Start Landing Samples -->
+<div class="landing-samples" style="background-image: url(images/samples_covers/Sample_Leadership.png);">
+    <div class="sample-brief">
+        <h1>Leadership Skills</h1>
+        <p>An instructor-led training provides team leaders and managers with an introduction
+            to the basic skills they need to lead their teams to success. I was responsible for gatherig conatnt, create 
+            instructor's guide, participant's guide and handouts activities. Also I developed one module as part of the 
+            learning experience using Storyline 360.
+        </p>
+    </div>
+</div>
+<!-- End Landing Samples -->
+<!-- Strat Sample Details -->
+<div class="sample-details">
+    <div class="container">
+        <div class="info">
+            <div class="col">
+                <h3>Details</h3>
+                <div class="col-info">
+                    <i class="fas fa-desktop"></i>
+                    <p><span>Types: </span>Instructor-led</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-user-tie"></i>
+                    <p><span>Client: </span>Skiller</p>
+                </div>
+                <div class="col-info">
+                    <i class="far fa-calendar-alt"></i>
+                    <p><span>Date: </span>30/07/2020</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Skills</h3>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Instructional Design</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Training Design</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Training Facilitation</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sample Details -->
+<!-- Strat Tabs Files -->
+<div class="tabs-details">
+    <div class="container">
+        <div class="tab">
+            <button class="tablinks" onclick="openSection(event, 'Instructor')" id="defaultOpen">Instructor's Guide</button>
+            <button class="tablinks" onclick="openSection(event, 'Participant')">Participant's Guide</button>
+            <button class="tablinks" onclick="openSection(event, 'Lesson_Plan')">Lesson Plan</button>
+        </div>
+        <div id="Instructor" class="tabcontent">
+            <iframe src="https://drive.google.com/uc?id=1e-_c-qSxT16241ep22LFN2IeljjbxRcF#view=FitH&toolbar=0" frameborder=""></iframe>
+        </div>
+        <div id="Participant" class="tabcontent">
+            <iframe src="https://drive.google.com/uc?id=1Oz2kLXyfyZLv8GMZ346iRqgu0fv5QAty#view=FitH&toolbar=0" frameborder=""></iframe>
+        </div>
+        <div id="Lesson_Plan" class="tabcontent">
+            <iframe src="https://drive.google.com/uc?id=1IB02UHHk1zEAI_quj5uQYedfcIboYiE_#view=FitH&toolbar=0" frameborder=""></iframe>
+        </div>
+    </div>
+</div>
+<!-- End Tabs Files -->
+<!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>
+                &copy; 2021 Shaaban Ahmed | Learning Architect - 
+                <span>All Rights Reserved</span>
+            </p>
+        </div>
+    </div>
+<!-- End Footer -->
+</body>
+<script>
+    function openSection(evt, sectionName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</html>

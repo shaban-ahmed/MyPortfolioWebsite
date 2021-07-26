@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Videography Basics</title>
+    <!-- Main Stylesheet CSS File -->
+    <link rel="stylesheet" href="css/WBT_samples.css">
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Aswome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Goofle Fonts(Oswald) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="JS/myScript.js"></script>
+    <style>
+        .sample-details .info {
+            display: flex;
+            justify-content: space-evenly;
+            grid-gap: 0;
+        }
+
+        @media (max-width: 767px) {
+            .sample-details .info {
+                flex-direction: column;
+                gap: 30px;
+                margin-left: 10%;
+            }
+            .sample-details {
+                padding-bottom: 40px;
+            }
+        }
+
+        .sample-details .info .col {
+            margin: 0;
+            width: 250px;
+        }
+        .sample-pdf {
+            padding-bottom: 80px;
+        }
+    </style>
+</head>
+<body>
+<!-- Start Header -->
+    <header>
+        <div class="container">
+            <p class="logo">Shaaban <span>Ahmed</span></p>
+            <nav>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars toggle-menu"></i></a>
+                <ul id="myLinks">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<!-- End Header -->
+<!-- Start Landing Samples -->
+<div class="landing-samples" style="background-image: url(images/samples_covers/Sample_Videography.png);">
+    <div class="sample-brief">
+        <h1>Videography Basics | Filmmaking</h1>
+        <p>This video-based course helps those who are interested in videography and filmmaking to learn the basics as 
+            a first step to become a filmmaker. It is a part of a learning path called "Become a filmmaker". I was 
+            responsible for planning the learning path with SME, reviewing the course script after SME writing it, 
+            write some video scripts, and creating the storyboards.
+        </p>
+    </div>
+</div>
+<!-- End Landing Samples -->
+<!-- Strat Sample Details -->
+<div class="sample-details">
+    <div class="container">
+        <div class="info">
+            <div class="col">
+                <h3>Details</h3>
+                <div class="col-info">
+                    <i class="fas fa-desktop"></i>
+                    <p><span>Types: </span>Video-Based</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-user-tie"></i>
+                    <p><span>Client: </span>VARIIANCE</p>
+                </div>
+                <div class="col-info">
+                    <i class="far fa-calendar-alt"></i>
+                    <p><span>Date: </span>15/03/2021</p>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Skills</h3>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Curriculum Planning</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Script Writing</p>
+                </div>
+                <div class="col-info">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Storyboarding</p>
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Sample Details -->
+<!-- Start Sample PDF File -->
+<div class="sample-pdf">
+    <div class="container">
+        <iframe src="samples files/Videography_SB.pdf#view=FitH" frameborder=""></iframe>
+    </div>
+</div>
+<!-- End Sample PDF File -->
+<!-- Start Footer -->
+    <div class="footer">
+        <div class="container">
+            <p>
+                &copy; 2021 Shaaban Ahmed | Learning Architect - 
+                <span>All Rights Reserved</span>
+            </p>
+        </div>
+    </div>
+<!-- End Footer -->
+</body>
+</html>
