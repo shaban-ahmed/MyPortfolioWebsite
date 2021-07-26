@@ -361,8 +361,7 @@ header nav ul li a:hover {
     padding-bottom: 60px;
     background-color: var(--secondary-color);
 }
-.sample-pdf iframe,
-.sample-pdf object {
+.sample-pdf iframe {
     width: 100%;
     height: 90vh;
     display: flex;
