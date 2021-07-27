@@ -1,0 +1,208 @@
+/* Start Variables */
+:root {
+    --main-color: #1F2935;
+    --secondary-color: #E8EDEF;
+    --states-color: #0B63E6;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+}
+ul {
+    list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Component */
+.read-more {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--states-color);
+}
+.arabic-text {
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+/* For Article Card Component */
+.post-title {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.6;
+    margin: 0;
+    position: relative;
+}
+.post-title::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    background-color: var(--states-color);
+    width: 140px;
+    bottom: -12px;
+}
+.pic-in-post {
+    object-fit: cover;
+    height: 40vh;
+    background-position: center;
+    margin: 20px 0;
+    width: 100%;
+}
+/* End Component */
+/* Start Header */
+header {
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
+}
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+ }
+ header p span {
+     color: var(--states-color)
+ }
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav .toggle-menu {
+    color: white;
+    font-size: 22px;
+}
+header nav .toggle-menu:hover {
+    color: var(--states-color);
+}
+@media (min-width: 768px) {
+    header nav .toggle-menu {
+        display: none;
+    }
+}
+header nav ul {
+    display: flex;
+}
+/* Using JS from W3School to Show Links in Small Screens */
+@media (max-width: 767px) {
+    #myLinks {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgb(31 41 53 / 90%);
+    }
+    #myLinks {
+        display: none;
+    }
+    header nav ul li a {
+        padding: 15px !important;
+    }
+}
+header nav ul li a {
+    padding: 20px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+header nav ul li a:hover {
+    color: var(--states-color);
+    border-bottom: 1px solid var(--states-color);
+}
+/* End Header */
+/* Start Article */
+.blogPost {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: white;
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}
+.blogPost .blogPost-content {
+    width: 80%;
+    margin: auto;
+    padding: 40px;
+}
+.blogPost .blogPost-content article {
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+@media (max-width: 991px) {
+    .blogPost .blogPost-content {
+        width: 100%;
+        margin: auto;
+        padding: 2% 0;
+    }
+}
+.blogPost .blogPost-content article li {
+    margin-right: 4%;
+}
+/* End Article Cards */
+/* Start Footer */
+.footer {
+    background-color: var(--main-color);
+}
+.footer p {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    font-size: 18px;
+}
+@media (max-width: 767px) {
+    .footer span {
+        display: block;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+}
+/* End Footer */
