@@ -57,6 +57,23 @@ ul {
     font-family: 'Tajawal', sans-serif;
     direction: rtl;
 }
+/* For Article Card Component */
+.post-title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0;
+    position: relative;
+}
+.post-title::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 2px;
+    background-color: var(--states-color);
+    width: 110px;
+    bottom: -8px;
+}
 /* End Component */
 /* Start Header */
 header {
@@ -103,25 +120,6 @@ header nav .toggle-menu:hover {
 header nav ul {
     display: flex;
 }
-
-/* Using CSS Methos with hover */
-/* @media (max-width: 767px) {
-    header nav ul {
-        display: none;
-    }
-    header nav .toggle-menu:hover + ul {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgb(31 41 53 / 90%);
-    }
-    header nav ul li a {
-        padding: 15px !important;
-    }
-} */
 /* Using JS from W3School to Show Links in Small Screens */
 @media (max-width: 767px) {
     #myLinks {
@@ -153,11 +151,13 @@ header nav ul li a:hover {
     border-bottom: 1px solid var(--states-color);
 }
 /* End Header */
+/* Start Blog Landing */
 .landing-blog {
     /* background-image: url(../images/samples_covers/Sample_GROW.png); */
     background-size: cover;
     height: 60vh;
     position: relative;
+    background-position: center;
 }
 .landing-blog::before {
     content: "";
@@ -195,8 +195,8 @@ header nav ul li a:hover {
         width: 80%
     }
 }
-/* End Landing Samples */
-/* Start Portfolio */
+/* End Blog Landing */
+/* Start Article Cards */
 .resources {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -220,18 +220,12 @@ header nav ul li a:hover {
     padding: 10px 0;
     font-family: 'Tajawal', sans-serif;
 }
-.resources .resources-content .article-card .info h3 {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 1.5;
-    margin: 0;
-}
 .resources .resources-content .article-card .info p {
     font-size: 16px;
     line-height: 1.6;
-    margin: 10px 0px;
+    margin: 20px 0 10px 0;
 }
-/* End Portfolio */
+/* End Article Cards */
 /* Start Footer */
 .footer {
     background-color: var(--main-color);
