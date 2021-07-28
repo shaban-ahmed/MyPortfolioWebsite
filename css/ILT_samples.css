@@ -277,7 +277,7 @@ header nav ul li a:hover {
 }
 @media (min-width: 1200px) {
     .tabs-details .tab {
-        width: 85%;
+        width: 72%;
     }
 }
 .tabs-details .tab button {
@@ -329,7 +329,7 @@ header nav ul li a:hover {
 
 @media (min-width: 1200px) {
     .tabs-details .tabcontent {
-        width: 85%;
+        width: 72%;
     }
 }
 .tabs-details iframe {
