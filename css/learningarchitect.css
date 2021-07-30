@@ -280,7 +280,6 @@ header nav ul li a:hover {
 /* Start Services */
 .services {
     padding-top: 40px;
-    padding-bottom: 20px;
     background-color: var(--main-color);
     display: flex;
 }
@@ -314,6 +313,12 @@ header nav ul li a:hover {
     }
     .services .services-content .card {
         padding: 20px;
+    }
+}
+/* Because of Low bottom padding in mobile version */
+@media (max-width: 554px) {
+    .services .services-content {
+        padding-bottom: 40px;
     }
 }
 /* End Services */
