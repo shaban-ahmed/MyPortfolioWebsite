@@ -351,7 +351,7 @@ header nav ul li a:hover {
   }
   .about .know-me .my-bio-pic {
       height: 100%;
-      background-image: url(../images/About-pic-43_2.jpg);
+      background-image: url(../images/About-pic-43_2.png);
       background-size: cover;
   }
   .about .know-me .my-bio-pic::before {
@@ -374,7 +374,7 @@ header nav ul li a:hover {
   }
   @media (max-width: 1199px) {
     .about .know-me .my-bio-pic {
-        background-image: url(../images/About-pic-169-Opt_2.jpg);
+        background-image: url(../images/About-pic-169-Opt_2.png);
     }    
   }
   @media (max-width: 991px) {
