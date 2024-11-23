@@ -19,9 +19,14 @@ html {
 body {
     font-family: 'Oswald', sans-serif;
 }
-ul {
+header nav ul {
     list-style: none;
 }
+ul {
+    list-style: disc;
+    line-height: normal;
+}
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -82,6 +87,23 @@ ul {
 .term {
     font-weight: bold;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 14px;
+
+}
+td, th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}  
+th {
+    background-color: var(--secondary-color); 
+  }
+  table td:first-child, table th:first-child {
+    width: 200px; 
+  }
 /* End Component */
 /* Start Header */
 header {
@@ -197,7 +219,7 @@ header nav ul li a:hover {
 }
 .blogPost .blogPost-content article li {
     margin-right: 4%;
-    padding: 15px 0;
+    padding: 6px 0;
 }
 /* End Article Cards */
 /* Start Footer */
